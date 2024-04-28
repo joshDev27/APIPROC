@@ -10,7 +10,7 @@ app = Flask(__name__)
 def separarPista(nombreMusica):
  if __name__ == '__main__':
 
-  musica = "https://github.com/joshDev27/APIPROC/firework.p3"#ubicacion de la pista que queremos separar
+  musica = "https://github.com/joshDev27/APIPROC/firework.mp3"#ubicacion de la pista que queremos separar
   separator = Separator("spleeter:2stems")
   separator.separate_to_file(musica,"https://github.com/joshDev27/APIPROC/")#ubicacion donde se guardara los 2stesms
   return"pitas separadas"
