@@ -14,6 +14,10 @@ def separarPista(nombreMusica):
   separator = Separator("spleeter:2stems")
   separator.separate_to_file(musica,"https://github.com/joshDev27/APIPROC/")#ubicacion donde se guardara los 2stesms
   return"pitas separadas"
+
+@app.route('/prueba')
+def texto_prueba():
+    return "Este es un texto de prueba."
  
 if __name__ == '__main__':
     app.run(debug=True)
